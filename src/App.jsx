@@ -1,12 +1,10 @@
-import logo from "./assets/LogoPoupApp.svg";
 import { Container } from "./components/Container";
+import { Aside } from "./components/Aside";
 
 function App() {
   return (
     <Container>
-      <aside>
-        <img src={logo} alt="" />
-      </aside>
+      <Aside />
     </Container>
   );
 }
