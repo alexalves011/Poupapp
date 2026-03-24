@@ -1,11 +1,17 @@
 import { Container } from "./components/Container";
 import { Aside } from "./components/Aside";
+import { SearchInput } from "./components/SearchInput";
+import { Main } from "./components/Main/Index";
 
 function App() {
   return (
     <Container>
       <Aside />
+      <Main>
+        <SearchInput/>
+      </Main>
     </Container>
+    
   );
 }
 
