@@ -2,25 +2,37 @@ import { Container } from "./components/Container";
 import { Aside } from "./components/Aside";
 import { SearchInput } from "./components/SearchInput";
 import { Main } from "./components/Main/Index";
-import {Typography} from "./components/Typography/index"
+import { Typography } from "./components/Typography/index";
+import Card from "./components/Card/index.jsx";
 
 function App() {
   return (
     <Container>
       <Aside />
       <Main>
-        <SearchInput/>
+        <SearchInput />
         <div>
-        <Typography variant="h1">
-          Olá, Alex
-        </Typography>
-        <Typography variant="body">
-          Veja como estão suas finanças hoje.
-        </Typography>
+          <Typography variant="h1">Olá, Alex</Typography>
+          <Typography variant="body">
+            Veja como estão suas finanças hoje.
+          </Typography>
         </div>
+        <section>
+          <Card>
+            <Card.Header>Orçamento diário disponivel:</Card.Header>
+            <Card.Body>R$ 200</Card.Body>
+          </Card>
+          <Card>
+            <Card.Header>Orçamento diário disponivel:</Card.Header>
+            <Card.Body>R$ 200</Card.Body>
+          </Card>
+          <Card>
+            <Card.Header>Orçamento diário disponivel:</Card.Header>
+            <Card.Body>R$ 200</Card.Body>
+          </Card>
+        </section>
       </Main>
     </Container>
-    
   );
 }
 
