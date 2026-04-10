@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 125%;
+  color: var(--secondary-income);
+}

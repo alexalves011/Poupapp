@@ -5,6 +5,7 @@ import { Main } from "./components/Main/Index";
 import { Typography } from "./components/Typography/index";
 import Card from "./components/Card/index.jsx";
 import { DailyBudget } from "./components/DailyBudget/index.jsx";
+import { SavingStatus } from "./components/SavingsStats/index.jsx";
 
 function App() {
   return (
@@ -24,8 +25,8 @@ function App() {
             <Card.Body> <DailyBudget value={250}/>  </Card.Body>
           </Card>
           <Card>
-            <Card.Header>Orçamento diário disponivel:</Card.Header>
-            <Card.Body>R$ 200</Card.Body>
+            <Card.Header>Progresso da meta financeira:</Card.Header>
+            <Card.Body><SavingStatus percent={40}/></Card.Body>
           </Card>
           <Card>
             <Card.Header>Orçamento diário disponivel:</Card.Header>
