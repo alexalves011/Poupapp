@@ -26,7 +26,7 @@ function App() {
           </Card>
           <Card>
             <Card.Header>Progresso da meta financeira:</Card.Header>
-            <Card.Body><SavingStatus percent={40}/></Card.Body>
+            <Card.Body><SavingStatus percent={90}/></Card.Body>
           </Card>
           <Card>
             <Card.Header>Orçamento diário disponivel:</Card.Header>
