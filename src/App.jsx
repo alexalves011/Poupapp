@@ -6,6 +6,7 @@ import { Typography } from "./components/Typography/index";
 import Card from "./components/Card/index.jsx";
 import { DailyBudget } from "./components/DailyBudget/index.jsx";
 import { SavingStatus } from "./components/SavingsStats/index.jsx";
+import { Transactions } from "./components/Transactions/index.jsx";
 
 import styles from "./App.module.css";
 
@@ -24,7 +25,7 @@ function App() {
           </div>
           <section className={styles.grid}>
             <Card>
-              <Card.Header>Orçamento diário disponivel:</Card.Header>
+              <Card.Header>Orçamento diário disponivel</Card.Header>
               <Card.Body>
                 {" "}
                 <DailyBudget value={250} />{" "}
@@ -37,11 +38,13 @@ function App() {
               </Card.Body>
             </Card>
             <Card>
-              <Card.Header>Orçamento diário disponivel:</Card.Header>
-              <Card.Body>R$ 200</Card.Body>
+              <Card.Header>Movimentação financeira</Card.Header>
+              <Card.Body>
+                <Transactions />
+              </Card.Body>
             </Card>
             <Card>
-              <Card.Header>Orçamento diário disponivel:</Card.Header>
+              <Card.Header>Orçamento diário disponivel</Card.Header>
               <Card.Body>R$ 200</Card.Body>
             </Card>
           </section>
