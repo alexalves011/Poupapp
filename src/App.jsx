@@ -7,6 +7,7 @@ import Card from "./components/Card/index.jsx";
 import { DailyBudget } from "./components/DailyBudget/index.jsx";
 import { SavingStatus } from "./components/SavingsStats/index.jsx";
 import { Transactions } from "./components/Transactions/index.jsx";
+import { Accounts } from "./components/Accounts/index.jsx";
 
 import styles from "./App.module.css";
 
@@ -44,8 +45,8 @@ function App() {
               </Card.Body>
             </Card>
             <Card>
-              <Card.Header>Orçamento diário disponivel</Card.Header>
-              <Card.Body>R$ 200</Card.Body>
+              <Card.Header>Minhas contas</Card.Header>
+              <Card.Body> <Accounts/> </Card.Body>
             </Card>
           </section>
         </div>

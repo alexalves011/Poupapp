@@ -40,7 +40,11 @@ export const Transactions = () => {
         })}
       </ul>
 
-      <Button> <IconCurrency/> Adicionar Transação</Button>
+        <div className={styles.actions}>
+          <Button> <IconCurrency/> Adicionar Transação</Button>
+        </div>
+
+      
     </>
   );
 };
